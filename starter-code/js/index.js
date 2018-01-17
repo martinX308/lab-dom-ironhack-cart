@@ -11,6 +11,9 @@ function getPriceByProduct(itemNode){
 }
 
 function updatePriceByProduct(productPrice, index){
+  //var quantity= e.currentTarget.value;
+  //var price =Number(document.getElementsByClassName('price')[index].innerHTML);
+
 
 }
 
@@ -60,10 +63,10 @@ function createNewItem(){
 
 
   var copy= productTemplate.cloneNode(true);
-    // appendChild requires NodeList object therefore querySelector
+    // appendChild requires Node 
   container.appendChild(copy);
   container.lastChild.querySelector('.price').innerText= document.querySelector('.new-product-price').value;
-  container.querySelector('.title').innerText =document.querySelector('.new-product-name').innerText;
+  container.lastChild.querySelector('.title').innerText =document.querySelector('.new-product-name').value;
   container.lastChild.removeAttribute('class');
   container.lastChild.setAttribute('class','product');
 

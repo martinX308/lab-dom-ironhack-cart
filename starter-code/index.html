@@ -12,22 +12,22 @@
   <body>
     <div class="wrapper">
       <div class="product"> 
-          <div class="line">
-            <span class="title">'product name1'</span>
-          </div>
-          <div class="line">
-            <p>$<span class="price">25.00</span></p>
-          </div >
-          <div class="line">
-            <label>QTY</label>
-            <input type="number" value=0 on-ch>
-          </div>
-          <div class="line">
-            <p>$<span class='total'>0</span></p>
-          </div>
-          <div class="line">
-            <button class="btn-delete">Delete</button>
-          </div>
+        <div class="line">
+          <span class="title">'product name1'</span>
+        </div>
+        <div class="line">
+          <p>$<span class="price">25.00</span></p>
+        </div >
+        <div class="line">
+          <label>QTY</label>
+          <input type="number" value=0 >
+        </div>
+        <div class="line">
+          <p>$<span class='total'>0</span></p>
+        </div>
+        <div class="line">
+          <button class="btn-delete">Delete</button>
+        </div>
       </div>
       <div class="product"> 
         <div class="line">
@@ -46,40 +46,40 @@
         <div class="line">
           <button class="btn-delete">Delete</button>
         </div>
-    </div>
+      </div>
    </div>
    <div class='new-product'>
-      <input class="new-product-name" type="text" value='new product name'>
-      <div>
-       <label> price per item in $</label>
-       <input class="new-product-price" type="number" value=0>
-      </div>
-      <button id="new-item-create">Create New Item</button>
+    <input class="new-product-name" type="text" value='new product name'>
+    <div>
+      <label> price per item in $</label>
+      <input class="new-product-price" type="number" value=0>
     </div>
-    <button id="calc-prices-button" onclick="">Calculate</button>
-    <h2>Total Price: $<span class='basketSum'>0</span></h2>
+    <button id="new-item-create">Create New Item</button>
+  </div>
+  <button id="calc-prices-button" onclick="">Calculate</button>
+  <h2>Total Price: $<span class='basketSum'>0</span></h2>
 
     
-    <div class='product-template'>
-        <div class="line">
-            <span class="title">''</span>
-          </div>
-          <div class="line">
-            <p>$<span class="price"></span></p>
-          </div >
-          <div class="line">
-            <label>QTY</label>
-            <input type="number" value=0>
-          </div>
-          <div class="line">
-            <p>$<span class='total'>0</span></p>
-          </div>
-          <div class="line">
-            <button class="btn-delete">Delete</button>
-          </div>
+  <div class='product-template'>
+    <div class="line">
+      <span class="title"></span>
     </div>
-  
+    <div class="line">
+      <p>$<span class="price"></span></p>
+    </div >
+    <div class="line">
+      <label>QTY</label>
+      <input type="number" value=0>
+    </div>
+    <div class="line">
+      <p>$<span class='total'>0</span></p>
+    </div>
+    <div class="line">
+      <button class="btn-delete">Delete</button>
+    </div>
+  </div>
 
-  </body>
+
+</body>
 
 </html>
